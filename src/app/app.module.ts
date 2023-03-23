@@ -10,11 +10,13 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BuscarComponent } from './buscar/buscar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    BuscarComponent,
     
   ],
   imports: [
@@ -24,7 +26,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     RouterModule,
     ComponentsModule,
     PagesModule,
-    NgbModule
+    NgbModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

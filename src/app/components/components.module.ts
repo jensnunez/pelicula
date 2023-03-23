@@ -4,26 +4,30 @@ import { RouterModule } from '@angular/router';
 import {NgbPaginationModule, NgbRatingModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { NavbarComponent } from './navbar/navbar.component';
-import { SlideShowComponent } from './slide-show/slide-show.component';
+
 import { PeliculasPosterGridComponent } from './peliculas-poster-grid/peliculas-poster-grid.component';
 import { PipesModule } from '../pipes/pipes.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { CastSlideShowComponent } from './cast-slide-show/cast-slide-show.component';
+
+import { BuscarComponent } from './buscar/buscar.component';
+import { PosterComponent } from './poster/poster.component';
 
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
-    SlideShowComponent,
+  
     PeliculasPosterGridComponent,
-    CastSlideShowComponent
+ 
+    BuscarComponent,
+       PosterComponent
   ],
   exports: [
     NavbarComponent,
-    SlideShowComponent,
+ 
     PeliculasPosterGridComponent,
-    CastSlideShowComponent
+ 
   ],
   imports: [
     CommonModule,
